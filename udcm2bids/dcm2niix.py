@@ -18,6 +18,6 @@ dcm2niix = ''
 if sys.platform == 'win32':
     dcm2niix = os.path.join(_dcm2niix_root, 'exe', 'dcm2niix.exe')
 elif sys.platform == 'darwin':
-    dcm2niix = os.path.join(_dcm2niix_root, 'exe', 'dcm2niix')
+    dcm2niix = os.path.join(_dcm2niix_root, 'exe', 'dcm2niix_macos')
 elif sys.platform == 'linux':
-    dcm2niix = os.path.join(_dcm2niix_root, 'exe', 'dcm2niix')
+    dcm2niix = os.path.join(_dcm2niix_root, 'exe', 'dcm2niix_linux')
