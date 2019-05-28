@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------------------------
 #
-#   Project - ubidsconv
+#   Project - udcm2bids
 #   Description:
 #       A python processing package to convert UIH DICOM into bids format
 #   File Name:    __init__.py
