@@ -225,7 +225,6 @@ def convert_uih_dcm_2_bids(uih_dcm_root,
 # Test Purpose
 #
 #----------------------------------------------------------------------------------------
-
 if __name__ == '__main__':
     dicom_root  = 'D:\\PD-control'
     bids_root   = 'D:\\PD-control_bids'
