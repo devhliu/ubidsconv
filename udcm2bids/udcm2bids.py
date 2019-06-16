@@ -191,6 +191,7 @@ def convert_uih_dcm_2_bids(uih_dcm_root,
     """
     # find the patient root defined as '*_*_*' - UIH specific exported dicom pattern
     patient_roots = glob(os.path.join(uih_dcm_root, '*', '*_*_*'))
+    patient_roots += glob(os.path.join(uih_dcm_root, '*', 'Image', '*_*_*'))
     for patient_root in patient_roots:
         # create sub bids folders
         patient_name = os.path.basename(patient_root)
