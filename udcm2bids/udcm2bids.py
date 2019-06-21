@@ -230,11 +230,15 @@ if __name__ == '__main__':
     dicom_root  = 'D:\\PD-control'
     bids_root   = 'D:\\PD-control_bids'
     if not os.path.exists(bids_root): os.mkdir(bids_root)
-    bids_func_info = [{'series_description': '2.44 x 2.44_',
+    bids_func_info = [{'series_description': 'epi_ra_',
                        'type': 'PET',
                        'bids_func_name': 'func',
                        'bids_task_name': 'rest'},
-                      {'series_description': '2.4 x 2.4_',
+                      {'series_description': 'epi_dwi_tra_ADC_1009',
+                       'type': 'PET',
+                       'bids_func_name': 'func',
+                       'bids_task_name': 'rest'},
+                      {'series_description': 'epi_dwi_tra_ADC_134343',
                        'type': 'CT',
                        'bids_func_name': 'anat'}]
     convert_uih_dcm_2_bids(dicom_root, bids_root, bids_func_info)
